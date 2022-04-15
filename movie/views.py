@@ -1,6 +1,6 @@
-from .models import Movie
 from django.shortcuts import render
 from django.http import HttpResponse 
+from .models import Movie
 
 def home(request):
     searchTerm = request.GET.get('searchMovie')
